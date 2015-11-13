@@ -76,6 +76,10 @@ $(function() {
                 max_value = value;
             }
         });
+        if (max_count == 1) {
+            // in caso di parita' fra tutte le caratteristiche, vincono gli occhi
+            max_value = $('#occhi').val();
+        }
         
         var nome = primo_nome_map[$('#testa').val()] + ' ' + secondo_nome_map[max_value];
         $('#monster-name').text(nome);

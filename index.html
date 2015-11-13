@@ -20,12 +20,16 @@
     <body>
         
         <div class="container">
-            <h1 class="text-center">Costruisci il tuo mostro</h1>
+            <h1 class="text-center">Pensiero computazionale</h1>
+            <p class="text-right">
+                <a href="https://studio.code.org/s/20-hour/stage/3/puzzle/1">Scopri di pi&ugrave; su questa attivit&agrave;</a>
+            </p>
             <hr>
         
             <div class="row">
                 <div class="col-sm-4">
-                    <form class="form-horizontal">
+                    <a class="btn btn-link" data-toggle="collapse" href="#form">Dettagli</a>
+                    <form class="form-horizontal collapse" id="form">
                         <div class="form-group">
                             <label for="testa" class="col-sm-4 control-label">Testa</label>
                             <div class="col-sm-8">
@@ -81,9 +85,9 @@
                                 </select>
                             </div>
                         </div>
-                        <button id="random" class="btn btn-info btn-lg btn-block" type="button">Un mostro a caso</button>
-                        <button id="nome-mostro" class="btn btn-primary btn-lg btn-block" type="button">Come si chiama?</button>
                     </form>
+                    <button id="random" class="btn btn-info btn-lg btn-block" type="button">Un mostro a caso</button>
+                    <button id="nome-mostro" class="btn btn-primary btn-lg btn-block" type="button">Come si chiama?</button>
                     <h4 class="text-center">Mostro numero <span id="monster-number"></span></h4>
                     <h3 id="monster-name" class="text-center"></h3>
                 </div>
@@ -96,8 +100,7 @@
                         <img class="orecchie">
                     </div>
                 </div>
-            </div>
-        
+            </div>        
         </div>
 
         <script src="js/jquery-1.11.3.min.js"></script>
