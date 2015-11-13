@@ -1,2 +1,11 @@
 .monster-container { position:relative; }
 .monster-container img { position:absolute; top:0; left:0; max-width:100%; height:auto; }
+
+#preloaded-images {
+    position: absolute;
+    overflow: hidden;
+    left: -9999px; 
+    top: -9999px;
+    height: 1px;
+    width: 1px;
+}
