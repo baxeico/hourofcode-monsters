@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Hour of code - Monsters</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/app.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        
+        <div class="container">
+            <h1 class="text-center">Costruisci il tuo mostro</h1>
+            <hr>
+        
+            <div class="row">
+                <div class="col-sm-4">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="testa" class="col-sm-4 control-label">Testa</label>
+                            <div class="col-sm-8">
+                                <select id="testa" class="form-control">
+                                    <option value="fanta">Fantasmatica</option>
+                                    <option value="allegra">Allegra</option>
+                                    <option value="orribile">Orribile</option>
+                                    <option value="schifosa">Schifosa</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="occhi" class="col-sm-4 control-label">Occhi</label>
+                            <div class="col-sm-8">
+                                <select id="occhi" class="form-control">
+                                    <option value="fanta">Fantasmatici</option>
+                                    <option value="biz">Bizzarri</option>
+                                    <option value="smo">Smorfiosi</option>
+                                    <option value="spi">Spiritati</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="naso" class="col-sm-4 control-label">Naso</label>
+                            <div class="col-sm-8">
+                                <select id="naso" class="form-control">
+                                    <option value="fanta">Fantasmatico</option>
+                                    <option value="biz">Bizzarro</option>
+                                    <option value="smo">Smorfioso</option>
+                                    <option value="spi">Spiritato</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bocca" class="col-sm-4 control-label">Bocca</label>
+                            <div class="col-sm-8">
+                                <select id="bocca" class="form-control">
+                                    <option value="fanta">Fantasmatica</option>
+                                    <option value="biz">Bizzarra</option>
+                                    <option value="smo">Smorfiosa</option>
+                                    <option value="spi">Spiritata</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="orecchie" class="col-sm-4 control-label">Orecchie</label>
+                            <div class="col-sm-8">
+                                <select id="orecchie" class="form-control">
+                                    <option value="fanta">Fantasmatiche</option>
+                                    <option value="biz">Bizzarre</option>
+                                    <option value="smo">Smorfiose</option>
+                                    <option value="spi">Spiritate</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button id="random" class="btn btn-primary btn-lg btn-block" type="button">Un mostro a caso</button>
+                        <button id="nome-mostro" class="btn btn-primary btn-lg btn-block" type="button">Come si chiama?</button>
+                    </form>
+                    <h4 class="text-center">Mostro numero <span id="monster-number"></span></h4>
+                    <h3 id="monster-name" class="text-center"></h3>
+                </div>
+                <div class="col-sm-8">
+                    <div class="monster-container">
+                        <img class="testa">
+                        <img class="occhi">
+                        <img class="naso">
+                        <img class="bocca">
+                        <img class="orecchie">
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
