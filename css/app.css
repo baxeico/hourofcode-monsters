@@ -1,11 +1,7 @@
-.monster-container { position:relative; }
-.monster-container img { position:absolute; top:0; left:0; max-width:100%; height:auto; }
+body { background:url(../img/background.jpg); background-size:cover; padding-top:50px; }
 
-#preloaded-images {
-    position: absolute;
-    overflow: hidden;
-    left: -9999px; 
-    top: -9999px;
-    height: 1px;
-    width: 1px;
-}
+.tools-container { background:rgba(255, 255, 255, 0.5); }
+.monster-container { position:relative; min-height:684px; max-width:635px; margin:0 auto; background:rgba(255, 255, 255, 0.5); }
+.monster-container img { position:absolute; top:0; left:0; max-width:100%; height:auto; }
+.preloaded-images { position: absolute; overflow: hidden; left: -9999px; top: -9999px; height: 1px; width: 1px; }
+.footer { padding-top:20px; }

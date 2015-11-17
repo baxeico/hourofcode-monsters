@@ -20,14 +20,9 @@
     <body>
         
         <div class="container">
-            <h1 class="text-center">Pensiero computazionale</h1>
-            <p class="text-right">
-                <a href="https://studio.code.org/s/20-hour/stage/3/puzzle/1">Scopri di pi&ugrave; su questa attivit&agrave;</a>
-            </p>
-            <hr>
-        
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4 tools-container">
+                    <h1 class="text-center text-primary">Mostri spaziali</h1>
                     <a class="btn btn-link" data-toggle="collapse" href="#form">Dettagli</a>
                     <form class="form-horizontal collapse" id="form">
                         <div class="form-group">
@@ -88,8 +83,8 @@
                     </form>
                     <button id="random" class="btn btn-info btn-lg btn-block" type="button">Un mostro a caso</button>
                     <button id="nome-mostro" class="btn btn-primary btn-lg btn-block" type="button">Come si chiama?</button>
-                    <h4 class="text-center">Mostro numero <span id="monster-number"></span></h4>
-                    <h3 id="monster-name" class="text-center"></h3>
+                    <h4 class="text-center text-primary">Mostro numero <span id="monster-number"></span></h4>
+                    <h3 id="monster-name" class="text-center text-primary"></h3>
                 </div>
                 <div class="col-sm-8">
                     <div class="monster-container">
@@ -100,10 +95,17 @@
                         <img class="orecchie">
                     </div>
                 </div>
-            </div>        
+            </div>
+            <div class="row footer">
+                <div class="col-sm-12">
+                    <p class="well well-sm text-center">
+                        <a href="https://studio.code.org/s/20-hour/stage/3/puzzle/1">Scopri di pi&ugrave; su questa attivit&agrave;</a>
+                    </p>
+                </div>
+            </div>
         </div>
         
-        <div id="preloaded-images">
+        <div class="preloaded-images">
             <img src="img/bocca/biz.png" width="1" height="1">
             <img src="img/bocca/fanta.png" width="1" height="1">
             <img src="img/bocca/smo.png" width="1" height="1">
