@@ -86,4 +86,9 @@ $(function() {
     });
     
     disegnaMostro();
+    
+    $(window).on("load resize", function() {
+        var image_height = $('.monster-container img')[0].clientHeight;
+        $('.monster-container').css('min-height', (image_height) + 'px');
+    });
 });
