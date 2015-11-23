@@ -9,4 +9,4 @@ starting from the principles explained in the lesson.
 
 [More info about the lesson](https://studio.code.org/s/20-hour/stage/3/puzzle/1)
 
-I plan to traslate the web app in English, I will accept pull requests for translating in other languages.
+The web app is available in English and Italian, I will be happy to accept pull requests for adding other languages. See file translations.js.
