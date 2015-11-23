@@ -40,16 +40,16 @@ $(function() {
     
     $('#nome-mostro').click(function() {
         var primo_nome_map = {
-            'fanta': 'Fantasmatico',
-            'allegra': 'Allegro',
-            'orribile': 'Orribile',
-            'schifosa': 'Schifoso'
+            'fanta': $('#testa option[value=fanta]').text(),
+            'allegra': $('#testa option[value=allegra]').text(),
+            'orribile': $('#testa option[value=orribile]').text(),
+            'schifosa': $('#testa option[value=schifosa]').text()
         };
         var secondo_nome_map = {
-            'fanta': 'Fantasmatico',
-            'biz': 'Bizzarro',
-            'smo': 'Smorfioso',
-            'spi': 'Spiritato'
+            'fanta': $('#occhi option[value=fanta]').text(),
+            'biz': $('#occhi option[value=biz]').text(),
+            'smo': $('#occhi option[value=smo]').text(),
+            'spi': $('#occhi option[value=spi]').text()
         };
         var value_count = {
             'fanta': 0,
@@ -90,5 +90,11 @@ $(function() {
     $(window).on("load resize", function() {
         var image_height = $('.monster-container img')[0].clientHeight;
         $('.monster-container').css('min-height', (image_height) + 'px');
+    });
+    
+    var translator = $('body').translate({lang: "en", t: translations});
+    
+    $('#language').change(function() {
+        translator.lang($(this).val());
     });
 });
